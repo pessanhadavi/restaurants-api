@@ -63,3 +63,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # Authorization tool
 gem 'pundit'
+# Token to users tool
+gem 'simple_token_authentication'
