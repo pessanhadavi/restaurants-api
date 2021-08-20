@@ -30,6 +30,8 @@ class Api::V1::RestaurantsController < Api::V1::BaseController
 
   def destroy
     @restaurant.destroy
+    head :no_content
+    # No need to create a `destroy.json.jbuilder` view
   end
 
   private
