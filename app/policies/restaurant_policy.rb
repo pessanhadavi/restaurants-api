@@ -18,4 +18,8 @@ class RestaurantPolicy < ApplicationPolicy
     # Any logged in user can create a restaurant instance
     !user.nil?
   end
+
+  def destroy?
+    update? # Same rule as update
+  end
 end
